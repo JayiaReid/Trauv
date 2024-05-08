@@ -1,0 +1,145 @@
+/* colors */
+:root {
+  --dark-blue: #02040D;
+  --dark-teal: #1A343D;
+  --beigish: #B8B0C0;
+  --primary: #320200;
+ --primary1: #FCA525;
+}
+body{
+  width: 100vw;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+*{
+  background-color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.i_h1{
+  border: 2px solid var(--primary1);
+  color: var(--primary1);
+  padding: 10px;
+  font-size: 25px;
+  margin-left: 11px;
+}
+
+.i_sub{
+  font-style: italic;
+}
+
+#intro{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 30px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 650px)  {
+  #intro{
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+.shrink{
+  font-size: 15px;
+  font-style: italic;
+  color: #FCA525;
+  /* padding-left: 10px; */
+}
+
+.c_over{
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: fade-in 1s ease-in-out;
+  /* flex-direction: column; */
+}
+
+.c_over h1{
+  font-size: 4em;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  /* font-style: italic; */
+  /* border-left: 5px solid white;
+  padding-left: 1em; */
+  /* backdrop-filter: blur(5px); */
+}
+
+.hidden {
+  display: none;
+}
+
+
+#menuContent {
+height: auto;
+background-color: black;
+display: flex;
+color: white;
+flex-direction: column; 
+flex-wrap: wrap; 
+padding: 1em;
+font-size: 1.1em;
+animation: fade-in 1s ease-in-out;
+}
+
+#menuContent h1 {
+font-style: italic;
+text-align: center;
+width: 100%; 
+}
+
+#menuContent h2 {
+border-left: 2px solid white;
+padding-left: 1em;
+width: 50%; 
+}
+
+#menuContent p {
+padding-left: 2em;
+width: 50%; 
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} 
+
+button{
+  background: transparent;
+  padding: 1em;
+  border: 2px white solid;
+  color: white;transition: 1s;
+  width: 20%;
+  box-shadow: #02040D 1px 1px 5px;
+}
+
+button:hover{
+  background-color: white;
+  color: black;
+  
+  transform: scale(1.1);
+}
+
+#h_btn{
+  margin-left: 80%;
+}
+
+.menu{
+  display: inline;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 5px;
+}
